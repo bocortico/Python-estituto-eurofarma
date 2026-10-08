@@ -24,4 +24,110 @@ titulo = tk.Label(
 
 titulo.pack(pady=20)
 
+#=========================================
+#3.Label tamanho senha
+#=========================================
+
+lbl_tamanho_senha = tk.Label(
+    text = 'insira uma senha abaixo',
+    font  = ('Comic Sans MS' ,13, 'bold'),
+    bg = "#2E3440",
+    fg = "#FF05DF"
+)
+
+lbl_tamanho_senha.pack(pady=20)
+
+#=========================================
+#4.entrada tamanho ou senha
+#=========================================
+
+entry_tamanho_senha = tk.Entry(
+    janela,
+    font = ('Comic Sans MS', 13),
+    width=12,
+    justify='center',
+)
+
+entry_tamanho_senha.pack(pady=20)
+
+#=========================================
+#5.criando variaveis de crontrole (true e false)
+#=========================================
+
+var_maiusculas=tk.BooleanVar(value=False)
+var_minusculas=tk.BooleanVar(value=True)
+var_numero=tk.BooleanVar(value=True)
+var_simbolo=tk.BooleanVar(value=True)
+
+#=========================================
+#6.criando as caixinhas de seleção
+#=========================================
+
+chk_maiuscula = tk.Checkbutton(
+    janela,
+    text = var_maiusculas,
+    bg = "#2E3440",
+    fg = "#FF05DF",
+    seleccolor = "#FF05DF",
+    activebackground = "#FF05DF",
+    activeforeground = "#2E3440"
+)
+
+chk_maiuscula.pack(anchor='w', padx=60, padxy=2)
+
+chk_minuscula = tk.Checkbutton(
+    janela,
+    text = var_minusculas,
+    bg = "#2E3440",
+    fg = "#FF05DF",
+    seleccolor = "#FF05DF",
+    activebackground = "#FF05DF",
+    activeforeground = "#2E3440"
+)
+
+chk_minuscula.pack(anchor='w', padx=60, padxy=2)
+
+chk_numero = tk.Checkbutton(
+    janela,
+    text = var_numero,
+    bg = "#2E3440",
+    fg = "#FF05DF",
+    seleccolor = "#FF05DF",
+    activebackground = "#FF05DF",
+    activeforeground = "#2E3440"
+)
+
+chk_numero.pack(anchor='w', padx=60, padxy=2)
+
+chk_simbolo = tk.Checkbutton(
+    janela,
+    text = var_simbolo,
+    bg = "#2E3440",
+    fg = "#FF05DF",
+    seleccolor = "#FF05DF",
+    activebackground = "#FF05DF",
+    activeforeground = "#2E3440"
+)
+
+chk_maiuscula.pack(anchor='w', padx=60, padxy=2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 janela.mainloop()
