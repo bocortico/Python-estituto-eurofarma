@@ -67,9 +67,9 @@ chk_maiuscula = tk.Checkbutton(
     janela,
     text = 'maiusculas',
     variable = var_maiusculas,
-    bg = "#2E3440",
-    fg = "#FF05DF",
-    seleccolor = "#FF05DF",
+    bg = "#FF05DF",
+    fg = "#2E3440",
+    selectcolor = "#FF05DF",
     activebackground = "#FF05DF",
     activeforeground = "#2E3440"
 )
@@ -80,9 +80,9 @@ chk_minuscula = tk.Checkbutton(
     janela,
     text = 'minusculas',
     variable = var_minusculas,
-    bg = "#2E3440",
-    fg = "#FF05DF",
-    seleccolor = "#FF05DF",
+    bg = "#FF05DF",
+    fg = "#2E3440",
+    selectcolor = "#FF05DF",
     activebackground = "#FF05DF",
     activeforeground = "#2E3440"
 )
@@ -91,11 +91,11 @@ chk_minuscula.pack(anchor='w', padx=60, pady=2)
 
 chk_numero = tk.Checkbutton(
     janela,
-    text = 'minusculas',
+    text = 'numero',
     variable = var_numero,
-    bg = "#2E3440",
-    fg = "#FF05DF",
-    seleccolor = "#FF05DF",
+    bg = "#FF05DF",
+    fg = "#2E3440",
+    selectcolor = "#FF05DF",
     activebackground = "#FF05DF",
     activeforeground = "#2E3440"
 )
@@ -106,9 +106,9 @@ chk_simbolo = tk.Checkbutton(
     janela,
     text = 'simbolos',
     variable = var_simbolo,
-    bg = "#2E3440",
-    fg = "#FF05DF",
-    seleccolor = "#FF05DF",
+    bg = "#FF05DF",
+    fg = "#2E3440",
+    selectcolor = "#FF05DF",
     activebackground = "#FF05DF",
     activeforeground = "#2E3440"
 )
