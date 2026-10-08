@@ -109,25 +109,6 @@ chk_simbolo = tk.Checkbutton(
     activeforeground = "#2E3440"
 )
 
-chk_maiuscula.pack(anchor='w', padx=60, padxy=2)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+chk_simbolo.pack(anchor='w', padx=60, padxy=2)
 
 janela.mainloop()
