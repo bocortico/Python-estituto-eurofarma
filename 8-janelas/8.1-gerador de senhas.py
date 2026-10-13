@@ -1,7 +1,11 @@
 #importando biblioteca e nomeando de 'tk'
 import tkinter as tk
 ALTURA='400'
-LARGURA='450'
+LARGURA='450' 
+#função temp. de coiso
+def acao_clique():
+    print('o botão foi clicado')
+
 #=========================================
 #1.configuração de janela principal.
 #=========================================
@@ -114,5 +118,42 @@ chk_simbolo = tk.Checkbutton(
 )
 
 chk_simbolo.pack(anchor='w', padx=60, pady=2)
+
+
+#========================================
+#7.criar botão gerador de senha
+#========================================
+
+btg_gerar= tk.Button(
+    janela,
+    text="gerar senha safada",
+    command = acao_clique,    
+    bg='#FF05DF',
+    fg="#2E3440",
+    padx=10,
+    pady=5
+)
+btg_gerar.pack(pady=15)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 janela.mainloop()
