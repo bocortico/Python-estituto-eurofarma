@@ -1,10 +1,53 @@
 #importando biblioteca e nomeando de 'tk'
 import tkinter as tk
+import random
+import string
 ALTURA='400'
 LARGURA='450' 
-#função temp. de coiso
-def acao_clique():
-    print('o botão foi clicado')
+#=========================================
+#0.logica por traz de tudo isso...
+#=========================================
+def gerar_senha():
+    try:
+        tamanho =int(tamanho=entry_tamanho_senha.get())
+
+    
+        if tamanho < 4:
+            lbl_resultado.config(
+                text='erro, minimo de 4 caracteres',
+                fg='#FF05DF'
+            )
+            return
+
+        caracteres =''
+
+        if var_maiusculas.get():
+            caracteres +=string.ascii_uppercase
+        if var_minusculas.get():
+            caracteres +=string.ascii_lowercase
+        if var_numero.get():
+            caracteres +=string.digits
+        if var_simbolo.get():
+            caracteres +=string.punctuation
+        if not caracteres:
+            lbl_resultado.config(
+                text='erro selecione ao menos uma opção',
+                fg='#FF05DF'
+            )
+            return
+    
+        senha = "".join(random.choice(caracteres) for i in range (tamanho))    
+        lbl_resultado.config(
+            text= ('senha: (senha)'),
+            fg= '#FF05DF'
+        )
+    except ValueError:
+        lbl_resultado.config(
+            text='error digite algum numero valido',
+            fg='#FF05DF'
+        )
+
+
 
 #=========================================
 #1.configuração de janela principal.
@@ -127,7 +170,7 @@ chk_simbolo.pack(anchor='w', padx=60, pady=2)
 btg_gerar= tk.Button(
     janela,
     text="gerar senha safada",
-    command = acao_clique,    
+    command = gerar_senha,    
     bg='#FF05DF',
     fg="#2E3440",
     padx=10,
@@ -135,25 +178,13 @@ btg_gerar= tk.Button(
 )
 btg_gerar.pack(pady=15)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+lbl_resultado = tk.Label(
+    janela,
+    text= 'a senha aparecera aqui',
+        font=('Comic Sans MS', 11, 'bold'),
+        bg= '#FF05DF',
+        fg= '#2E3440',
+)
+lbl_resultado.pack(pady=5)
 
 janela.mainloop()
