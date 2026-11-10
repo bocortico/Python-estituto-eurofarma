@@ -50,7 +50,7 @@ def copiar_senha():
     text_resultado=lbl_resultado.cget('text')
 
     if "Senha: "in text_resultado:
-        senha_pura=text_resultado.replace('senha: ', 'error')
+        senha_pura=text_resultado('senha: ', '')
         janela.clipboard_clear()
         janela.clipboard_append(senha_pura)
     else:
