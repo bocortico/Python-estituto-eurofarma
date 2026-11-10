@@ -8,7 +8,7 @@ print('---amostra inicial(head)---')
 print(db.head())
 
 #3-inspecionar tipos de dados e quantidades de valores nulos.
-print('---informações estruturais(info---')
+print('---informações estruturais(info)---')
 print(db.info())
 
 #4-estatisticas descritivas para ver medias e posiveis anomalias.
