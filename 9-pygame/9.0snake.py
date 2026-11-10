@@ -22,9 +22,6 @@ pygame.display.set_caption(' New Lirili Larila Adventures EX Six Seven Deluxe V2
 
 relogio = pygame.time.Clock()
 
-pygame.mixer.music.load('BoxCat_Games_-_08_-_CPU_Talk.ogg.mp3')
-pygame.mixer.music.set_volume(0.3)
-pygame.mixer.music.play(-1)
 
 com_comida = pygame.mixer.Sound('smw_coin.wav')
 
