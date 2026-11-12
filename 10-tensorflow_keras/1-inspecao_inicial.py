@@ -1,4 +1,4 @@
- #-importando a biblioteca pandas com o apelido 'pd'.
+#-importando a biblioteca pandas com o apelido 'pd'.
 import pandas as pd
 
 #-carregando o arquivo .csv sujo
