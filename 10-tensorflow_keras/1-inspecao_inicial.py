@@ -1,5 +1,4 @@
-#-importando a biblioteca pandas com o apelido 'pd'.
-import pandas as pd
+import pandas as pd #-importando a biblioteca pandas com o apelido 'pd'.
 
 #-carregando o arquivo .csv sujo
 db = pd.read_csv ('dados_brutos.csv')
