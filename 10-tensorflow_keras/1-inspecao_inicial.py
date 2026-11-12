@@ -1,4 +1,5 @@
-import pandas as pd #-importando a biblioteca pandas com o apelido 'pd'.
+ #-importando a biblioteca pandas com o apelido 'pd'.
+import pandas as pd
 
 #-carregando o arquivo .csv sujo
 db = pd.read_csv ('dados_brutos.csv')
@@ -14,3 +15,4 @@ print(db.info())
 #4-estatisticas descritivas para ver medias e posiveis anomalias.
 print('---estatisticas basicas(describe)---')
 print(db.describe())
+
