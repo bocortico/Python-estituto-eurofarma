@@ -33,3 +33,7 @@ print('\n---estatistica atualizada apóa tratar os outliers---')
 print(ld.describe())
 #-mostrar quantas linhas sobraram na tabela apóas os cortes de idade.
 print(f'total de linhas validas após os filtros {len(ld)}')
+
+#-gravando a nova versão no disco.
+ld.to_csv('limpezas_inconsistencias_outliers.csv', index=False)
+print("\n arquivo salvo com sucesso: 'limpezas_inconsistencias_outliers.csv' criado no diretório.")
