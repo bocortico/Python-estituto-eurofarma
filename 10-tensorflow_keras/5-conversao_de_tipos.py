@@ -15,3 +15,4 @@ print(li['status_matriculado'].head())
 #-salvando o resultado final para o tensorflow.
 li.to_csv('conversao_de_tipos.csv', index=False)
 print("\n variaveis codificadas e arquivo salvo com sucesso: 'conversao_de_tipos.csv' criado no diretório." )
+
