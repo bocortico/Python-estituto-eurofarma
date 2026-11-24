@@ -24,3 +24,5 @@ X_train.to_csv('X_treino.csv', index=False)
 X_test.to_csv('X_teste.csv', index=False)
 Y_train.to_csv('Y_treino.csv', index=False)
 Y_test.to_csv('Y_teste.csv', index=False)
+
+print('sucesso! os arquivos foram gerados e guardados na pasta.')
