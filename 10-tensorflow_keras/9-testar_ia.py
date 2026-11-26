@@ -43,5 +43,5 @@ plt.xlabel('Nota real (gabarito)')
 plt.ylabel('Nota prevista pela IA')
 plt.grid(True)
 
-plt.plot([0.1],[0,1],color='red',linestyle='--')
+plt.plot([0.1],[0.1],color='red',linestyle='--')
 plt.show()
