@@ -35,7 +35,7 @@ print('---iniciando o treinamento da inteligência artificial---')
 histórico = modelo.fit(
     X_train,
     Y_train,
-    epochs = 10,
+    epochs = 200,
     verbose = 1
 )
 

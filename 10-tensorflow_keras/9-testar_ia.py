@@ -30,5 +30,5 @@ previsao = mp.predict(aluno_exemplo)
 
 
 print(f'Dados dos analizados: \n{aluno_exemplo}')
-print(f'nota real (gabarito): {nota_real[0]}')
+print(f'nota real (gabarito): {nota_real}')
 print(f'Nota prevista pela IA: {previsao[0][0]:.2f}')
