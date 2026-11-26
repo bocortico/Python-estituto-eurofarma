@@ -27,8 +27,21 @@ nota_real = Y_test.head(1)
 #-a IA faz a previsão.
 previsao = mp.predict(aluno_exemplo)
 
-
-
 print(f'Dados dos analizados: \n{aluno_exemplo}')
 print(f'nota real (gabarito): {nota_real}')
 print(f'Nota prevista pela IA: {previsao[0][0]:.2f}')
+
+#-gerando o gráfico de avaliação.
+
+print('---gerando a grafico de disperção (Revisão vs Real)---')
+
+previsões_todas = mp.predict(X_test)
+plt.figure(figsize=(6,6))
+plt.scatter(Y_test,previsões_todas,color='purple',alpha=0.7)
+plt.title('Notas vs Notas previstas pela IA')
+plt.xlabel('Nota real (gabarito)')
+plt.ylabel('Nota prevista pela IA')
+plt.grid(True)
+
+plt.plot([0.1],[0,1],color='red',linestyle='--')
+plt.show()
